@@ -20,3 +20,7 @@ ASP.NET Web API with React JS Framework
 -cd API -> dotnet add reference ../Application
 -cd ../ cd Application -> dotnet add reference ../Persistence && dotnet add reference ../Domain
 -cd ../ cd Persistence -> dotnet add reference ../Domain
+
+
+# GUIDES
+https://docs.microsoft.com/en-us/aspnet/core/migration/50-to-60-samples?view=aspnetcore-5.0
