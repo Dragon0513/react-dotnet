@@ -24,3 +24,34 @@ ASP.NET Web API with React JS Framework
 
 # GUIDES
 https://docs.microsoft.com/en-us/aspnet/core/migration/50-to-60-samples?view=aspnetcore-5.0
+
+EF CORE COMMAND FOR VS 2022
+/*
+    Add-Migration
+    Bundle-Migration
+    Drop-Database
+    Get-DbContext
+    Get-Migration
+    Optimize-DbContext
+    Remove-Migration
+    Scaffold-DbContext
+    Script-DbContext
+    Script-Migration
+    Update-Database */
+	
+-Add-Migration InitialMigrate -OutputDir Data/Migrations
+-Update-Database
+
+#Revert Migration After applied in Db
+-Update-Database -Migration 0
+Update-Database -Migration 0 -p Infrastructure -s API
+
+Add-Migration InitialCreate -p Infrastructure -s API -o Data/Migrations
+Update-Database -p Infrastructure -s API 
+
+
+# REACT
+
+npx create-react-app client-app --use-npm --template typescript
+
+npm start
