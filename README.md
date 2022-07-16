@@ -51,7 +51,14 @@ Update-Database -p Infrastructure -s API
 
 
 # REACT
-
 npx create-react-app client-app --use-npm --template typescript
-
+npx create-react-app client-app
 npm start
+
+# DOWNGRADE
+npm install -–save react@17.0.2 react-dom@17.0.2
+https://exerror.com/how-to-downgrade-react-version-18-to-17/
+
+# REACT PKG
+npm install axios
+npm install semantic-ui-react semantic-ui-css
