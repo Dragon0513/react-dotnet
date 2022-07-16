@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "mvB/LHlXf6J5OtfpDb/28Ed/F4LxvHleoNgnJt5ZGVGn+zk2xzSNFLCOaRXi/qviPrSv72yB1EPk4XZ1yYPLow==",
+  "dgSpecHash": "uSFBuLCgUEG6GWL2HLQC3iBOX2sDr6hztJnHQAXE2RzxelPAHRvi/SyRTl7Hsr+7oHaLvnO6q4qmraw8J74lrw==",
   "success": true,
   "projectFilePath": "C:\\SelfStudy\\Projects\\ReactDotNet\\Reactivities\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Itdev\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Itdev\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Itdev\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Itdev\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Itdev\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Itdev\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Itdev\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\Itdev\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Itdev\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Itdev\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Itdev\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
