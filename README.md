@@ -62,3 +62,4 @@ https://exerror.com/how-to-downgrade-react-version-18-to-17/
 # REACT PKG
 npm install axios
 npm install semantic-ui-react semantic-ui-css
+npm install mobx mobx-react-lite
