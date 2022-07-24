@@ -10,7 +10,6 @@
     "@types/react": "16.8.23",
     "@types/react-dom": "16.8.4",
     "@types/react-infinite-scroller": "^1.2.1",
-    "@types/react-router-dom": "^4.3.4",
     "@types/react-widgets": "^4.3.3",
     "@types/revalidate": "^1.1.2",
     "@types/uuid": "^3.4.5",
@@ -60,6 +59,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "web-vitals": "^2.1.4"
   }
 }
