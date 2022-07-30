@@ -1,5 +1,6 @@
 import { observer } from 'mobx-react-lite';
-import React, { ChangeEvent, useEffect } from 'react';
+//import React, { ChangeEvent, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Button, Form, Segment } from 'semantic-ui-react';
 import { useStore } from '../../../app/stores/store';

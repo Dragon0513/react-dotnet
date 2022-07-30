@@ -64,3 +64,5 @@ npm install axios
 npm install semantic-ui-react semantic-ui-css
 npm install mobx mobx-react-lite
 npm install react-router-dom
+npm install react-calendar @3.2.1
+npm install @types/react-calendar@3.1.2
