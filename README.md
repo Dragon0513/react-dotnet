@@ -68,3 +68,13 @@ npm install history@4.3.4
 npm install react-calendar@3.2.1
 npm install @types/react-calendar@3.1.2
 npm install react-toastify@5.3.2
+npm install formik@2.2.6
+npm install yup@0.32.8
+npm install @types/yup@0.29.11 --save-dev
+npm install react-datepicker@3.3.0
+npm install @types/react-datepicker@3.1.2
+npm install react-datepicker --legacy-peer-deps
+
+
+npm ls date-fns
+npm install date-fns@2.16.1
