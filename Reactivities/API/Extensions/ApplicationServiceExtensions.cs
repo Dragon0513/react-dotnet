@@ -2,6 +2,8 @@
 using Application.Core;
 using FluentValidation.AspNetCore;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -12,7 +14,11 @@ namespace API.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection Services,
             IConfiguration config)
         {
-            Services.AddControllers().AddFluentValidation(config => {
+            Services.AddControllers(opt =>
+            {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                opt.Filters.Add(new AuthorizeFilter(policy));
+            }).AddFluentValidation(config => {
                 config.RegisterValidatorsFromAssemblyContaining<Create>();
             });
 

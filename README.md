@@ -49,6 +49,10 @@ Update-Database -Migration 0 -p Infrastructure -s API
 Add-Migration InitialCreate -p Infrastructure -s API -o Data/Migrations
 Update-Database -p Infrastructure -s API 
 
+Add-Migration IdentityAdded -p Persistence -s API
+
+jwt.io => DECODE TOKEN JWT
+
 
 # REACT
 npx create-react-app client-app --use-npm --template typescript
