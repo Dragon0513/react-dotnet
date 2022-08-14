@@ -1,6 +1,8 @@
 ﻿using Application.Activities;
 using Application.Core;
+using Application.Interfaces;
 using FluentValidation.AspNetCore;
+using Infrastructure.Security;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -38,6 +40,7 @@ namespace API.Extensions
 
             Services.AddMediatR(typeof(List.Handler).Assembly);
             Services.AddAutoMapper(typeof(MappinngProfiles).Assembly);
+            Services.AddScoped<IUserAccessor, UserAccessor>();
 
             return Services;
         }
