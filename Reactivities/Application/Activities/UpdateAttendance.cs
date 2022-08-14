@@ -52,7 +52,7 @@ namespace Application.Activities
                 if (attendance != null && hostUsername != user.UserName)
                     activity.Attendees.Remove(attendance);
 
-                if (attendance != null)
+                if (attendance == null)
                 {
                     attendance = new ActivityAttendee
                     {
