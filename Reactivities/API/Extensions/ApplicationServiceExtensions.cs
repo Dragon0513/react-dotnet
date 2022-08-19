@@ -2,6 +2,7 @@
 using Application.Core;
 using Application.Interfaces;
 using FluentValidation.AspNetCore;
+using Infrastructure.Photos;
 using Infrastructure.Security;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -41,6 +42,9 @@ namespace API.Extensions
             Services.AddMediatR(typeof(List.Handler).Assembly);
             Services.AddAutoMapper(typeof(MappinngProfiles).Assembly);
             Services.AddScoped<IUserAccessor, UserAccessor>();
+            Services.AddScoped<IPhotoAccessor, PhotoAccessor>();
+
+            Services.Configure<CloudinarySettings>(config.GetSection("Cloudinary"));
 
             return Services;
         }
