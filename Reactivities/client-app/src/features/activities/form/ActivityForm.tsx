@@ -19,7 +19,7 @@ import { ActivityFormValues } from '../../../app/model/activity';
 export default observer(function ActivityForm() {
     const history = useHistory();
     const {activityStore} = useStore();
-    const { createActivity, updateActivity, loading, loadActivity, loadingInitial} = activityStore;
+    const { createActivity, updateActivity, loadActivity, loadingInitial} = activityStore;
     const {id} = useParams<{id: string}>();
 
     const [activity, setActivity] = useState<ActivityFormValues>(new ActivityFormValues());
