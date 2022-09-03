@@ -1,4 +1,5 @@
 import { makeAutoObservable, runInAction } from "mobx";
+import { toast } from "react-toastify";
 import agent from "../api/agent";
 import { Photo, Profile } from "../model/profile";
 import { store } from "./store";
@@ -88,6 +89,20 @@ export default class ProfileStore {
         } catch (error) {
             runInAction(() => this.loading = false);
             console.log(error);
+        }
+    }
+
+     updateProfile = async (profile: Partial<Profile>) => {
+        try {
+            await agent.Profiles.updateProfile(profile);
+            runInAction(() => {
+                if (profile.displayName !== store.userStore.user!.displayName) {
+                    store.userStore.user!.displayName = profile.displayName!;
+                }
+                this.profile = {...this.profile!, ...profile}
+            })
+        } catch (error) {
+            toast.error('Problem updating profile')
         }
     }
 }
