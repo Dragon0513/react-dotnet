@@ -85,3 +85,5 @@ npm install date-fns@2.16.1
 
 npm install --save react-dropzone
 npm install --save react-cropper --legacy-peer-deeps
+
+npm install @microsoft/signalr
