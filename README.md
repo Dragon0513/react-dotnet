@@ -50,6 +50,7 @@ Add-Migration InitialCreate -p Infrastructure -s API -o Data/Migrations
 Update-Database -p Infrastructure -s API 
 
 Add-Migration IdentityAdded -p Persistence -s API
+Remove-Migration -p Persistence -s API
 
 jwt.io => DECODE TOKEN JWT
 
