@@ -88,3 +88,7 @@ npm install --save react-dropzone
 npm install --save react-cropper --legacy-peer-deeps
 
 npm install @microsoft/signalr
+
+
+https://vertabelo.com
+dotnet ef migrations script -o test.sql -p Persistence -s API
