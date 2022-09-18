@@ -92,3 +92,5 @@ npm install @microsoft/signalr
 
 https://vertabelo.com
 dotnet ef migrations script -o test.sql -p Persistence -s API
+
+npm install react-infinite-scroller --legacy-peer-deps
