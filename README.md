@@ -94,3 +94,22 @@ https://vertabelo.com
 dotnet ef migrations script -o test.sql -p Persistence -s API
 
 npm install react-infinite-scroller --legacy-peer-deps
+
+
+# FOR PRODUCTION
+npm run build
+
+docker run --name dev -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:latest
+
+https://hub.docker.com/_/postgres
+
+Add-Migration PGInitial -p Persistence -s API
+
+
+
+git add .
+git commit -m "Heroku PROD"
+git push heroku main
+
+
+https://reactivitiesudemy.herokuapp.com/
